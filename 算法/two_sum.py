@@ -28,6 +28,7 @@ print(twoSum_slow([2, 3 , 7 , 11, 15],9))
 a = [2, 3 , 7 , 11, 15]
 
 
+
 def twoSum_fast(num,target):
     result = {}
     for i in range(len(num)):
