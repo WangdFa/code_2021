@@ -6,6 +6,38 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 """
+def sum_function(array,target):
+    '''
+    :param array: list
+    :param target: int
+    :return: list
+    '''
+    result = []
+    for num,i in enumerate(array):
+        temp = target-i
+        try:
+            t = array.index(temp)
+            if t!=num:
+                result.append(num)
+                result.append(t)
+                break
+        except:
+            continue
+    return result
+print(sum_function([2, 3 , 7 , 11, 15],9))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def twoSum_slow(nums, target):
     """
