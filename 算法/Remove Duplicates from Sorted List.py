@@ -1,5 +1,17 @@
-#在排好序的链表中删除重复值
-# Definition for singly-linked list.
+'''
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+
+题意：对给定的排好序的链表，删除重复的元素，只留下出现一次的元素
+
+
+
+
+
+解题思路：创建两个链表，一个负责保存头节点，一个负责记录比较后的结果。
+'''
 class ListNode(object):
     def __init__(self, x):
         self.val = x
